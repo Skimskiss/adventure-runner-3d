@@ -1,0 +1,5 @@
+import React from 'react';
+export default function Icon({name,size=20,...props}){
+ const paths={map:<><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2z"/><path d="M9 3v16m6-14v16"/></>,sound:<><path d="m11 4-5 4H3v8h3l5 4z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></>,muted:<><path d="m11 4-5 4H3v8h3l5 4z"/><path d="m16 9 6 6m0-6-6 6"/></>,pause:<><path d="M8 5v14m8-14v14"/></>,play:<path d="m8 4 12 8-12 8z"/>,expand:<path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/>,heart:<path d="M20.8 4.7a5.5 5.5 0 0 0-7.8 0L12 5.8l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.5a5.5 5.5 0 0 0 0-7.8z"/>,flag:<><path d="M5 22V3m0 0c5-4 9 4 14 0v11c-5 4-9-4-14 0"/></>,check:<path d="m4 12 5 5L21 5"/>,sun:<><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/></>,chevron:<path d="m6 9 6 6 6-6"/>};
+ return <svg width={size} height={size} viewBox="0 0 24 24" fill={name==='heart'?'currentColor':'none'} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{paths[name]||paths.check}</svg>;
+}
