@@ -2,6 +2,10 @@
 
 A complete twelve-world browser platformer built with Vite, React 19, React Three Fiber and Three.js. All game geometry, effects and sounds are created in code. The four supplied images guide the red-capped backpack character, floating gardens, spinning red bars, checkpoint and blue portal.
 
+## Download and play
+
+The repository download includes the source, the ready-to-host production build in [dist/](dist/), the [implementation guide](docs/Adventure-Runner-3D-Implementation-and-Architecture.pdf), and [test reports and screenshots](docs/verification/). Upload the contents of dist to a static web host, or use the local launcher below.
+
 ## Play locally
 
 Requires Node.js 20.19+ or 22.12+ (tested with Node 24).
@@ -91,7 +95,7 @@ Low-memory/core and touch devices start in Smooth mode. Four-second frame sampli
 
 Pickup sparkles, run/landing dust, jump squash/stretch, camera look-ahead and FOV response, hit shake, respawn fade and animated victory medals add feedback. Audio and music initialize after a gesture; mute and haptics settings persist. Vibration is optional and depends on browser/device support.
 
-New modules: `Effects.jsx` (pooled particles and performance sampling), `preferences.js` (settings, device profiles, haptics), `Icon.jsx` (HUD icons). Existing save keys and twelve worlds are preserved. See the accompanying Polish-Verification.md for checks and practical limits. Real phone hardware performance has not been measured; viewport testing is not physical device testing.
+New modules: `Effects.jsx` (pooled particles and performance sampling), `preferences.js` (settings, device profiles, haptics), `Icon.jsx` (HUD icons). Existing save keys and twelve worlds are preserved. See [the polish report](docs/verification/Polish-Verification.md) for checks and practical limits. Real phone hardware performance has not been measured; viewport testing is not physical device testing.
 
 ## Phone performance follow-up (2026-10-22)
 
